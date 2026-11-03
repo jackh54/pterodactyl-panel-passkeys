@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="Panel Passkeys: sign in to your Pterodactyl panel with a passkey">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b14"/>
+      <stop offset=".55" stop-color="#121027"/>
+      <stop offset="1" stop-color="#071a24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.18" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.9" cy="0.95" r="0.55">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <mask id="cut"><rect width="256" height="256" fill="#fff"/><circle cx="184" cy="184" r="42" fill="#000"/></mask>
+  </defs>
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <rect width="1280" height="420" fill="url(#grid)"/>
+  <rect width="1280" height="420" fill="url(#glow1)"/>
+  <rect width="1280" height="420" fill="url(#glow2)"/>
+
+  <!-- logo -->
+  <g transform="translate(88 118) scale(.72)">
+    <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+    <g mask="url(#cut)" fill="none" stroke="#0b0b14" stroke-opacity=".9" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M104 158 V114 A12 12 0 0 1 128 114 V128"/>
+      <path d="M88 144 V114 A28 28 0 0 1 144 114 V136 Q144 156 136 170"/>
+      <path d="M72 128 V114 A44 44 0 0 1 77.9 92"/>
+      <path d="M88.9 79.3 A44 44 0 0 1 160 114 V140"/>
+      <path d="M56 138 V114 A60 60 0 0 1 162 75.4"/>
+      <path d="M170.8 89.6 A60 60 0 0 1 175.7 107.7"/>
+    </g>
+    <circle cx="184" cy="184" r="32" fill="#0b0b14"/>
+    <path d="M170 185 l10 10 19 -21" fill="none" stroke="#34d399" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif">
+    <text x="300" y="186" font-size="78" font-weight="800" fill="#fafafa" letter-spacing="-2">Panel <tspan fill="url(#accent)">Passkeys</tspan></text>
+    <text x="304" y="238" font-size="27" fill="#c4c4d4">Passkey sign-in for Pterodactyl. No password, no code.</text>
+    <g font-size="17" font-weight="600" fill="#e4e4f0">
+      <g transform="translate(304 270)"><rect width="330" height="38" rx="19" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/><text x="165" y="25" text-anchor="middle">Face ID · Touch ID · Windows Hello</text></g>
+      <g transform="translate(646 270)"><rect width="186" height="38" rx="19" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/><text x="93" y="25" text-anchor="middle">Phishing-resistant</text></g>
+      <g transform="translate(844 270)"><rect width="160" height="38" rx="19" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/><text x="80" y="25" text-anchor="middle">Counts as 2FA</text></g>
+    </g>
+    <text x="304" y="350" font-size="16" fill="#8b8ba3">A Pterodactyl Panel 2.0 extension · phones · security keys · password managers</text>
+  </g>
+
+  <!-- sign-in check snippet -->
+  <g transform="translate(1046 92)" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="12.5">
+    <rect width="212" height="236" rx="14" fill="#0e0e18" stroke="#ffffff" stroke-opacity=".12"/>
+    <circle cx="18" cy="18" r="4.5" fill="#f87171"/><circle cx="34" cy="18" r="4.5" fill="#fbbf24"/><circle cx="50" cy="18" r="4.5" fill="#34d399"/>
+    <text x="16" y="52" fill="#a78bfa">▸ challenge</text>
+    <text x="30" y="74" fill="#8b8ba3">single-use · 5 min</text>
+    <text x="16" y="102" fill="#a78bfa">▸ verify you</text>
+    <text x="30" y="124" fill="#8b8ba3">biometric or PIN</text>
+    <text x="16" y="152" fill="#22d3ee">▸ panel checks</text>
+    <text x="30" y="174" fill="#8b8ba3">origin · signature</text>
+    <text x="30" y="194" fill="#8b8ba3">challenge · counter</text>
+    <text x="16" y="220" fill="#34d399">✓ signed in</text>
+  </g>
+</svg>

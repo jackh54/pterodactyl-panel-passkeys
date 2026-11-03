@@ -1,0 +1,44 @@
+name: Bug report
+description: Something in Panel Passkeys doesn't work as described
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Security problems go to [private reporting](https://github.com/jackh54/pterodactyl-panel-passkeys/security/advisories/new), not here.**
+        Please remove passwords, cookies and private addresses from anything you paste.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead (the exact error text helps).
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      placeholder: e.g. adding a passkey on the account page, "Sign in with a passkey"
+  - type: input
+    id: device
+    attributes:
+      label: Device, browser and passkey provider
+      placeholder: e.g. iPhone 16 / Safari / iCloud Keychain, Windows 11 / Chrome / Windows Hello, YubiKey 5
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: Panel Passkeys 1.0.0, panel 2.0-develop @ abc1234, PHP 8.3
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Is the panel served over HTTPS, at exactly its APP_URL?
+      placeholder: e.g. yes, https://panel.example.com (APP_URL is the same)
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Lines from storage/logs/laravel-*.log around the time (search for "Panel Passkeys").
+      render: text

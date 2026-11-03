@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" role="img" aria-label="How a passkey sign-in works with Panel Passkeys">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0d18"/><stop offset="1" stop-color="#0a1820"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8b8ba3"/></marker>
+  </defs>
+  <rect width="1200" height="520" rx="24" fill="url(#bg)"/>
+
+  <!-- column 1: browser + the user's device -->
+  <g transform="translate(30 80)">
+    <rect width="262" height="360" rx="18" fill="#16162a" stroke="#a78bfa" stroke-opacity=".55"/>
+    <text x="131" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#fafafa">Browser + your device</text>
+    <text x="131" y="64" text-anchor="middle" font-size="14" fill="#9d9db5">the panel's login page</text>
+    <g transform="translate(23 82)">
+      <rect width="216" height="38" rx="10" fill="url(#btn)"/>
+      <g transform="translate(14 8) scale(.9)" fill="none" stroke="#0b0b14" stroke-width="2.2" stroke-linecap="round">
+        <path d="M9 21 V12 A3 3 0 0 1 15 12 V15"/><path d="M5.5 18 V12 A6.5 6.5 0 0 1 18.5 12 V17"/><path d="M2 14 V12 A10 10 0 0 1 20.5 6.5"/>
+      </g>
+      <text x="120" y="25" text-anchor="middle" font-size="15" font-weight="700" fill="#0b0b14">Sign in with a passkey</text>
+    </g>
+    <text x="23" y="156" font-size="16" font-weight="700" fill="#fcd34d">② Verify you &amp; sign</text>
+    <text x="23" y="180" font-size="14" fill="#b4b4c8">biometric or PIN, always required</text>
+    <g font-size="14" fill="#e4e4f0" text-anchor="middle">
+      <rect x="23" y="194" width="216" height="27" rx="13.5" fill="#ffffff" fill-opacity=".06"/><text x="131" y="212.5">Face ID · Touch ID</text>
+      <rect x="23" y="227" width="216" height="27" rx="13.5" fill="#ffffff" fill-opacity=".06"/><text x="131" y="245.5">Windows Hello · phone</text>
+      <rect x="23" y="260" width="216" height="27" rx="13.5" fill="#ffffff" fill-opacity=".06"/><text x="131" y="278.5">security key</text>
+      <rect x="23" y="293" width="216" height="27" rx="13.5" fill="#ffffff" fill-opacity=".06"/><text x="131" y="311.5">password manager</text>
+    </g>
+    <text x="131" y="344" text-anchor="middle" font-size="13" fill="#9d9db5">the panel only ever sees a public key</text>
+  </g>
+
+  <!-- column 2: the extension inside the panel -->
+  <g transform="translate(392 40)">
+    <rect width="444" height="440" rx="20" fill="#121224" stroke="url(#ac)" stroke-width="2"/>
+    <text x="222" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#fafafa">Pterodactyl panel + <tspan fill="url(#ac)">Panel Passkeys</tspan></text>
+
+    <g transform="translate(26 66)">
+      <rect width="392" height="104" rx="14" fill="#1b1b33"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#c4b5fd">① Challenge</text>
+      <text x="20" y="56" font-size="14" fill="#b4b4c8">fresh random challenge for this sign-in</text>
+      <text x="20" y="78" font-size="14" fill="#b4b4c8">single-use · expires after 5 minutes</text>
+    </g>
+    <g transform="translate(26 188)">
+      <rect width="392" height="166" rx="14" fill="#1b1b33"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#a5f3fc">③ Panel checks the response</text>
+      <text x="20" y="58" font-size="14" fill="#b4b4c8">origin matches APP_URL exactly  <tspan fill="#34d399">✓</tspan></text>
+      <text x="20" y="82" font-size="14" fill="#b4b4c8">challenge unused and not expired  <tspan fill="#34d399">✓</tspan></text>
+      <text x="20" y="106" font-size="14" fill="#b4b4c8">signature matches the stored public key  <tspan fill="#34d399">✓</tspan></text>
+      <text x="20" y="130" font-size="14" fill="#b4b4c8">user was verified on the device  <tspan fill="#34d399">✓</tspan></text>
+      <text x="20" y="154" font-size="14" fill="#b4b4c8">signature counter shows no cloned key  <tspan fill="#34d399">✓</tspan></text>
+    </g>
+    <text x="222" y="392" text-anchor="middle" font-size="13.5" fill="#9d9db5">a failed attempt counts toward the panel's normal login lockout</text>
+    <text x="222" y="414" text-anchor="middle" font-size="13.5" fill="#9d9db5">no device data collected (attestation "none")</text>
+  </g>
+
+  <!-- column 3: result -->
+  <g transform="translate(930 150)">
+    <rect width="236" height="220" rx="18" fill="#0f1d24" stroke="#34d399" stroke-opacity=".55"/>
+    <text x="118" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#fafafa">④ Signed in</text>
+    <text x="118" y="70" text-anchor="middle" font-size="14" fill="#9d9db5">to your panel account</text>
+    <g transform="translate(24 94)" font-size="14" fill="#e4e4f0">
+      <rect width="192" height="30" rx="8" fill="#ffffff" fill-opacity=".07"/><circle cx="16" cy="15" r="5" fill="#34d399"/><text x="32" y="20">counts as two-step</text>
+      <rect y="40" width="192" height="30" rx="8" fill="#ffffff" fill-opacity=".07"/><circle cx="16" cy="55" r="5" fill="#34d399"/><text x="32" y="60">no TOTP code asked</text>
+      <rect y="80" width="192" height="30" rx="8" fill="#ffffff" fill-opacity=".07"/><circle cx="16" cy="95" r="5" fill="#34d399"/><text x="32" y="100">in the activity log</text>
+    </g>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#8b8ba3" stroke-width="2" fill="none" marker-end="url(#ar)">
+    <path d="M292 186 C 345 186, 360 140, 416 140"/>
+    <path d="M416 184 C 360 184, 345 246, 294 246"/>
+    <path d="M292 380 C 345 380, 360 318, 416 318"/>
+    <path d="M810 318 C 865 318, 878 260, 928 260"/>
+  </g>
+  <g font-size="12.5" fill="#9d9db5">
+    <text x="306" y="146">start</text>
+    <text x="300" y="272">challenge</text>
+    <text x="300" y="404">response</text>
+    <text x="846" y="250">all pass</text>
+  </g>
+</svg>
