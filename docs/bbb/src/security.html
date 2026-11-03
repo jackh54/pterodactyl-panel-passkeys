@@ -1,0 +1,21 @@
+<!doctype html><meta charset=utf-8><link rel=stylesheet href=base.css>
+<div class="w panel">
+  <span class=tag><svg viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Security</span>
+  <h1>Phishing-resistant <span class=grad>by design</span></h1>
+  <div class=lead>A passkey only works on your panel's own address, and the private key never reaches the panel.</div>
+  <div class="g c3">
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg></div>
+      <h3>Strict origin check</h3><p>Only responses made for your panel's exact <span class=mono>APP_URL</span> are accepted. A look-alike site gets nothing it can use.</p></div>
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg></div>
+      <h3>Single-use challenges</h3><p>Every sign-in gets a fresh random challenge that works <b>once</b> and expires after <b>5&nbsp;minutes</b>.</p></div>
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></div>
+      <h3>Clone detection</h3><p>The signature counter is checked on every sign-in to catch a <b>copied authenticator</b>.</p></div>
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><path d="M3 7h3c5 0 7 10 12 10h3"/><path d="M3 17h3c5 0 7-10 12-10h3"/><path d="M18 4l3 3-3 3"/><path d="M18 14l3 3-3 3"/></svg></div>
+      <h3>Private by design</h3><p>A <b>random user handle</b>, never your email or ID. Attestation is <span class=mono>none</span>, so no device data is collected.</p></div>
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <h3>Same lockout rules</h3><p>Failed passkey attempts count toward the panel's <b>normal login lockout</b>. Adding or removing one needs your password.</p></div>
+    <div class=card><div class=ic><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+      <h3>You'll always know</h3><p>The owner gets an <b>email</b> when a passkey is added or removed, and every action lands in the <b>activity log</b>.</p></div>
+  </div>
+  <div class=foot><span>Panel Passkeys · by PandaScript</span><span>Pterodactyl Panel 2.0 · Free &amp; open source · MIT</span></div>
+</div>

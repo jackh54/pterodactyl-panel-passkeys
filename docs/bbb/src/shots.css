@@ -1,0 +1,13 @@
+/* Screenshot slides: framed real panel screenshots (content untouched). */
+.shot{height:900px;padding:64px 90px 0}
+.shot h1{font-size:54px;margin:20px 0 12px}
+.shot .lead{font-size:23px}
+.frame{border-radius:16px;overflow:hidden;background:#1f2933;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.4),0 0 70px rgba(124,92,255,.18)}
+.frame .bar{height:36px;display:flex;align-items:center;gap:8px;padding:0 16px;background:#14141f;border-bottom:1px solid rgba(255,255,255,.08)}
+.frame .bar i{width:11px;height:11px;border-radius:50%;display:block}
+.frame .bar i:nth-child(1){background:#f87171}.frame .bar i:nth-child(2){background:#fbbf24}.frame .bar i:nth-child(3){background:#34d399}
+.frame img{display:block;width:100%;height:auto}
+.ticks{list-style:none;margin-top:30px;display:grid;gap:16px}
+.ticks li{font-size:22px;line-height:1.4;color:var(--sub);padding-left:38px;position:relative}
+.ticks li:before{content:"✓";position:absolute;left:0;top:0;width:26px;height:26px;border-radius:8px;background:rgba(52,211,153,.15);color:var(--green);font-size:16px;font-weight:700;display:grid;place-items:center;margin-top:2px}
+.ticks b{color:#e4e4f0;font-weight:600}

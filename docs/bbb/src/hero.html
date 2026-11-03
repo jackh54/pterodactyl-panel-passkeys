@@ -1,0 +1,53 @@
+<!doctype html><meta charset=utf-8><link rel=stylesheet href=base.css>
+<style>
+.w{height:800px;padding:0 90px;display:flex;align-items:center}
+.left{width:1000px}
+h1.big{font-size:104px;letter-spacing:-4px;line-height:1;margin:30px 0 22px}
+.lead{font-size:31px;color:#d4d4e2;white-space:nowrap}
+.pills{margin-top:40px;flex-wrap:nowrap;gap:12px}
+.pill{font-size:19px;padding:10px 18px}
+.by{margin-top:44px;font-size:20px;color:var(--dim)}
+.art{position:absolute;right:100px;top:50%;transform:translateY(-50%);width:340px;height:340px}
+.art .logo{width:340px;height:340px;filter:drop-shadow(0 30px 80px rgba(124,92,255,.45)) drop-shadow(0 0 60px rgba(34,211,238,.25))}
+.chip{position:absolute;font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:500;color:#e4e4f0;padding:10px 16px;border-radius:12px;background:rgba(14,14,24,.92);border:1px solid rgba(255,255,255,.14);white-space:nowrap}
+.chip i{font-style:normal;color:var(--green);margin-right:8px}
+</style>
+<div class=w>
+  <div class=left>
+    <span class=tag>Pterodactyl Panel 2.0 extension</span>
+    <h1 class=big>Panel <span class=grad>Passkeys</span></h1>
+    <div class=lead>Passkey sign-in for Pterodactyl. No password, no code.</div>
+    <div class=pills>
+      <span class=pill>Pterodactyl 2.0</span>
+      <span class=pill>Face ID · Touch ID · Windows Hello</span>
+      <span class=pill>Phishing-resistant</span>
+      <span class=pill>Free &amp; open source</span>
+    </div>
+    <div class=by>by PandaScript · MIT licence · github.com/jackh54/pterodactyl-panel-passkeys</div>
+  </div>
+  <div class=art>
+    <svg class=logo viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+        <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <mask id="cut"><rect width="256" height="256" fill="#fff"/><circle cx="184" cy="184" r="42" fill="#000"/></mask>
+      </defs>
+      <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+      <rect x="8" y="8" width="240" height="120" rx="56" fill="url(#glass)"/>
+      <g mask="url(#cut)" fill="none" stroke="#0b0b14" stroke-opacity=".9" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M104 158 V114 A12 12 0 0 1 128 114 V128"/>
+        <path d="M88 144 V114 A28 28 0 0 1 144 114 V136 Q144 156 136 170"/>
+        <path d="M72 128 V114 A44 44 0 0 1 77.9 92"/>
+        <path d="M88.9 79.3 A44 44 0 0 1 160 114 V140"/>
+        <path d="M56 138 V114 A60 60 0 0 1 162 75.4"/>
+        <path d="M170.8 89.6 A60 60 0 0 1 175.7 107.7"/>
+      </g>
+      <circle cx="184" cy="184" r="32" fill="#0b0b14"/>
+      <path d="M170 185 l10 10 19 -21" fill="none" stroke="#34d399" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class=chip style="left:-72px;top:56px"><i>✓</i>origin</span>
+    <span class=chip style="left:-56px;top:262px"><i>✓</i>challenge</span>
+    <span class=chip style="right:-44px;top:-22px"><i>✓</i>signature</span>
+    <span class=chip style="right:-66px;top:128px"><i>✓</i>counter</span>
+  </div>
+</div>
