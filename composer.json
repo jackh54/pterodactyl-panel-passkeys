@@ -1,0 +1,15 @@
+{
+    "name": "pandascript/panel-passkeys",
+    "description": "Composer dependencies shipped in the panel-passkeys extension's vendor/ (loaded by the panel).",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "lbuchs/webauthn": "^2.2"
+    },
+    "config": {
+        "autoloader-suffix": "PanelPasskeys",
+        "optimize-autoloader": true,
+        "platform": { "php": "8.3.6" }
+    }
+}

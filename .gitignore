@@ -1,0 +1,7 @@
+/dist/
+/node_modules/
+/vendor/
+/.sdk/
+__pycache__/
+*.pteroext
+.DS_Store
